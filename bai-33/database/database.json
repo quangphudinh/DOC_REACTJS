@@ -436,6 +436,15 @@
         "beverages"
       ],
       "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Juice/thumbnail.png"
+    },
+    {
+      "id": "ea21",
+      "title": "sfsdf",
+      "price": "123",
+      "discountPercentage": "123",
+      "stock": "123",
+      "thumbnail": "https://cdn.mobilecity.vn/mobilecity-vn/images/2024/03/hinh-nen-hoa-mau-don-3.jpg.webp",
+      "description": "hoa dep vailon"
     }
   ],
   "category": [

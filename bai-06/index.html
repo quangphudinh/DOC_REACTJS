@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <style>
+        *{
+            box-sizing: border-box;
+        }
+        .box{
+            background: #CCCCCC;
+            margin: 5px;
+            padding :20px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 700;
+            font-family: Arial;
+        }
+        .clear-both{
+            clear: both;
+        }
+        .sidebar-1{
+            width: 25%;
+            float: left;
+        }
+        .sidebar-2{
+            width: 25%;
+            float: right;
+        }
+        .article{
+            width: calc(50% - 30px);
+            float: left;
+        }
+    </style>
+
+    <div class="box header">
+        Header
+    </div>
+    <div class="main">
+        <div class="box sidebar-1">
+            Sidebar1
+        </div>
+        <div class="box article">
+            Article
+        </div>
+        <div class="box sidebar-2">
+            Sidebar2
+        </div>
+        <div class="clear-both"></div>
+    </div>
+    <div class="box footer">Footer</div> -->
+
+    <style>
+        * {
+            box-sizing: border-box;
+            background: #000000;
+        }
+
+        .box {
+            background: #000000;
+            margin: 5px;
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 700;
+            font-family: Arial;
+            color: #FFFFFF;
+            /* border: 1px solid #FFFFFF; */
+        }
+
+        .sidebar-1 {
+            width: 25%;
+            float: left;
+            height: 100vh;
+            position: fixed;
+            flex-direction: column;
+
+        }
+
+        .sidebar-2 {
+            width: 25%;
+            float: right;
+            height: 50vh;
+        }
+
+        .article {
+            width: calc(50% - 30px);
+            float: right;
+        }
+
+        .header {
+            margin-bottom: 20px;
+            height: 100px;
+        }
+
+        .footer {
+            height: 100vh;
+        }
+
+        .main::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .line{
+            height: 100vh;
+            width: 1px;
+            background: rgb(255, 255, 255);
+            float : right;
+        }
+        .content{
+            margin-top: 20px;
+            border: 1px solid #FFFFFF;
+            height: 300px;
+            background-color: #FFFFFF;
+        }
+    </style>
+
+    <div class="main">
+        <div class="box sidebar-1">
+            Sidebar1
+            <div class="line"></div>
+        </div>
+        <div class="box sidebar-2">
+            Sidebar2
+        </div>
+        <div class="article">
+            <div class="box header">Header</div>
+            <div class="box footer">Footer
+                <div class="content"> Noi dung </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo vero, sequi iste ex optio, corrupti qui fugiat possimus assumenda aliquam accusantium non deleniti aut dolore repellendus nulla dolorum et. Iste!</p>
+                
+            </div>
+        </div>
+
+        <div class="clear-both"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <style>
+        a{
+            color: red;
+        }
+        a:link{
+            color: blue;
+        }
+        a:visited{
+            color: green;
+        }
+        a:hover{
+            color: yellow;
+        }
+        .box{
+            background-color: aqua;
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+        }
+        .box i {
+            display: none;
+        }
+        .box:hover{
+            background-color: blueviolet;
+        }
+        .box:hover i{
+            display: inline;
+        }
+        /*nhan chuot vao thi thuc hien*/
+        .box:active{
+            background-color: red;
+        }
+    </style>
+
+    <a href=#1234>Link trang gi do</a>
+    <div class="box">
+        Noi dung
+        <i>icon</i>
+    </div> -->
+
+    <!-- <style>
+        /*lay th con dau tien*/
+        ul li:first-child{
+            color:red;
+        }
+        ul li:last-child{
+            color:blue;
+        }
+        ul li:nth-child(3){
+            color: pink;
+        }
+        /*lay phan tu con o vị trí chỉ định khi đđược truyền vào , nếu truyền vào even : lay phan tu chẵn , odd : phần tử lẻ*/
+        ul li:nth-child(4){
+            color:rgb(65, 255, 65);
+        }
+    </style> -->
+
+    <!-- <ul>
+        <li>muc 1</li>
+        <li>muc 2</li>
+        <li>muc 3</li>  
+        <li>muc 4</li>
+        <li>muc 5</li>
+    </ul> -->
+
+    <style>
+        /* .box span{
+            background-color: aqua;
+            border: 1px solid black;
+        } */
+        /*SU DUNG PSEUDO-ELEMENT SELECTOR*/
+        /* .box::before{
+            content: "v";
+            background-color: red;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            text-align: center;
+            /* padding-top: 10px; 
+            display: inline-block;
+        } */
+        /* .box::after{
+            content: "NOi dung sau";
+            color: red;
+        } */
+         /*chu dau tien o phan tu dau tien*/
+         /* .box::first-letter{
+             font-size: 100px;
+         } */
+
+          /* hang tien moi box */
+           .box::first-line{
+             text-transform: uppercase;
+         }
+
+         ul li::marker{
+             color: red;
+             font-size: 20px;
+         }
+
+         /*opacty : làm mờ có giá trị từ 0 đến 1*/
+         .text{
+            opacity: 0.6;
+         }
+
+         /*dung de làm hiệu ứng khi bôi đen đoạn văn bản trong class này*/
+         .text::selection{
+             background-color: red;
+         }
+    </style>
+
+    <div class="box">
+        <!-- <span>Noi dung dang truoc</span> -->
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente eos ut exercitationem, esse, necessitatibus nulla sequi, reiciendis beatae maiores eaque sunt voluptatibus nesciunt repellat rerum dolorem distinctio officia cumque ipsa.
+    </div>
+    <ul>
+        <li>muc 1</li>
+        <li>muc 2</li>
+        <li>muc 3</li>  
+        <li>muc 4</li>
+        <li>muc 5</li>
+    </ul>
+
+    <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio placeat eos fugit libero sit, totam maxime reiciendis saepe nemo cum perferendis? Accusamus, eaque quibusdam non eligendi necessitatibus mollitia nobis velit.</p>
+</body>
+</html>

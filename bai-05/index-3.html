@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        .inline , .block , .inline-block{
+            background: orange;
+            border: 1px solid black;
+        }   
+        .block{
+            display: block;
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .inline-block{
+            display: inline-block;
+            height: 50px;
+        }
+    </style>
+
+
+    <h2>1. Display : inline : không đặt được chiều rộng và chiều cao , k thêm đc padding và margin top va bottom</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <span class="inline">The inline 1</span> <span
+            class="inline">The inline 2</span>
+        Ipsum, sint illum et blanditiis asperiores similique dicta consequuntur. Consequatur dolore sapiente dicta
+        veniam velit ut eveniet numquam unde, inventore rerum obcaecati.</p>
+
+    <h2>1. Display : block : cho phép đặt chiều rộng và chiều cao , nằm trên 1 hàng ngang</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <span class="block">The block 1</span> <span
+            class="block">The block 2</span>
+        Ipsum, sint illum et blanditiis asperiores similique dicta consequuntur. Consequatur dolore sapiente dicta
+        veniam velit ut eveniet numquam unde, inventore rerum obcaecati.</p>
+
+    <h2>1. Display : inline-block : chiều rộng măc định bằng chiều cao element , cho phép dặt chiều rộng và chiều cao</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <span class="inline-block">The inline-block 1</span> <span
+            class="inline-block">The inline-block 2</span>
+        Ipsum, sint illum et blanditiis asperiores similique dicta consequuntur. Consequatur dolore sapiente dicta
+        veniam velit ut eveniet numquam unde, inventore rerum obcaecati.</p>
+
+</body>
+
+</html>

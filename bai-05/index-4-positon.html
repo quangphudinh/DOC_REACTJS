@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+        .box-1  , .box-2{
+            background: orange;
+            border: 4px solid black;
+            width: 200px;
+            height: 200px;
+            font-size: 40px;
+            /* position: static; k the dich chuyen sang vi tri khac : k su dung dc top left right bottom */
+        }
+        .box-2{
+            position: relative; /*cach so voi vi tri ban dau cua no*/
+            top: 50px;
+            left: 50px;
+        }
+
+        .box-3{
+            background: blue;
+            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+            font-size: 30px;
+            position: absolute;/* Cach so voi th box cha cua no : va box cha pk dc de kieu static*/
+            top: 30px;
+            left: 20px;
+        }
+        .box-4{
+            background: blue;
+            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+            font-size: 30px;
+            position: fixed;/* so sanh voi viewport , luon o vi tri co dinh ngay ca khi trang web dc cuon*/
+            top: 30px;
+            left: 20px;
+        }
+
+        .box-5{
+            background: blue;
+            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+            font-size: 30px;
+            position: sticky;/* khi keo len dau trang web se co dinh nhu fixed ; so sanh voi viewport , luon o vi tri co dinh ngay ca khi trang web dc cuon*/
+            top: 0px;
+            left: 0px;
+        }
+
+        .header{
+            position: sticky;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            background: green;
+            z-index: 10;/*so cang cao thif nam tren , k su dung voi position : static*/
+        }
+        
+    </style>
+
+    <header class="header">
+        <h1>Header</h1>
+    </header>
+
+    <div class="box-1">BOX1</div>
+    <div class="box-2">
+        BOX2
+        <div class="box-3">
+            BOX3
+            <div class="box-4">
+                BOX4
+            </div>
+        </div>
+    </div>
+    
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div class="box-5">box5</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio quod asperiores, dolor, animi quo at laborum neque deleniti nostrum nemo. Quibusdam adipisci ipsam minus numquam nisi possimus omnis repellendus.</div>
+    
+</body>
+</html>

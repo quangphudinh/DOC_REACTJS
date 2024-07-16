@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        /* div + p{ /*p duy nhat được đặt cùng cấp và liền kề ngay sau div
+            background-color: yellow;
+        } */
+        /* div ~ p{ /*tat cả p được đặt cùng cấp và liền kề ngay sau div
+            background-color: yellow;
+        } */
+        /*chon tất cả phẩn tử p là cấp con cấp 1 trong div*/
+        /* div > p{
+            background-color: yellow;
+        } */
+
+        /*chon tat ca P ben trong div*/
+        /* div p {
+            background-color: yellow;
+        } */
+    </style>
+
+
+    <!-- <p>Noi dung0</p>
+    <div>
+        <p>Noi dung1</p>
+        <p>Noi dung 2</p>
+        <section>
+            <p>Noi dung 5</p>
+            <p>Noi dung 6</p>
+        </section>
+    </div>
+     <h2>Noi dung the h2</h2> 
+    <p>Noi dung 3</p>
+    <p>Noi dung 4</p> -->
+
+<style>
+    /* h3{
+        color: red;
+    } */
+    .parent .child h3{
+        color: red;
+    }
+</style>
+    <h3>Noi dung khac</h3>
+    <div class="parent">
+        <div class="child">
+            <h3>Noi dung 1</h3>
+        </div>
+        <div class="child">
+            <h3>Noi dung 2</h3>
+        </div>
+        <div class="child">
+            <h3>Noi dung 3</h3>
+        </div>
+        <div class="child">
+            <h3>Noi dung 4</h3>
+        </div>
+    </div>
+</body>
+</html>

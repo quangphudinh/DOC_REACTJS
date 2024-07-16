@@ -1,0 +1,27 @@
+
+.box {
+    padding: 50px;
+    background: rgb(168, 168, 243);
+    height: 50vh;  /*chi ap dung cho phan content */
+    box-sizing: border-box; /*su dung box-sizing de ap dung cho ca border*/
+    border: 10px solid rgb(0, 0, 0);
+    width: 50vw; /*chiem 50% man hinh*/
+    min-width: 200px; /*kich thuoc nho nhat cua box*/
+    max-width: 400px;
+    min-height: 200px;
+    max-height: 300px;
+
+    text-align: justify; /*can deu 2 ben*/
+    /*text-transform: uppercase; viet hoa tat ca chu*/
+    /*text-decoration: underline; gach chan tat ca cac chu */
+
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic; /*normal , oblique , italic*/
+    font-weight: 100; /*bold , 123 tram , do day cua chu*/
+    font-size: 15px; /*kich thuoc chu*/
+    
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

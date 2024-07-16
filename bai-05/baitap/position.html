@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+</head>
+
+<body>
+    <style>
+        .content {
+            background: #1f8dec;
+            border-radius: 10px;
+            padding: 60px 30px;
+            position: relative;
+            /*su dung relative de co the su dung absolute o phan content*/
+            overflow: hidden;
+            /*an di hinh tron thua ra khoi khung*/
+        }
+
+        .content::before {
+            content: "";
+            width: 120px;
+            height: 120px;
+            display: inline-block;
+            background: #0455a7e3;
+            border-radius: 50%;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .content::after {
+            content: "";
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            background: #0455a7e3;
+            border-radius: 50%;
+            position: absolute;
+            top: 200px;
+            right: -50px;
+        }
+
+        .content .inner-content {
+            color: white;
+            position: relative;
+            z-index: 2;
+
+        }
+
+        .content .inner-content::first-letter {
+            font-size: 40px;
+        }
+
+        .content .inner-content::first-line {
+            text-transform: uppercase;
+        }
+
+        .header {
+            position: sticky;
+            display: flex;
+            /* justify-content: space-between; */
+            width: 100%;
+            background: #e78c15;
+            top : 0px;
+            right: 1px;
+            border-radius: 10px;
+        }
+
+        .header h4 {
+            color: white;
+            font-size: 20px;
+            padding: 10px;
+            margin: 0;
+        }
+        .middle-content {
+            margin-top: 120px;
+            background-color: rgb(195, 207, 219);
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 10px 20px;
+            margin-bottom: 50px;
+        }
+    </style>
+
+    <div class="header">
+        <h4>Trang Chu</h4>
+        <h4>Tin Tuc</h4>
+        <h4>Lien He</h4>
+        <h4>Gioi Thieu</h4>
+        <h4>Dang Ky</h4>
+    </div>
+
+    <div class="middle-content">
+        <div class="box">
+            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor illum corrupti numquam incidunt sunt
+                voluptatum at ab, odit, suscipit, repellendus amet cum? Minima, dolore numquam odio laborum animi
+                repellendus est!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum eius perferendis laborum molestias
+                rerum nostrum praesentium! Voluptatibus modi rem explicabo veniam? Dolore est, ex dolores omnis
+                accusantium
+                quidem excepturi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nihil iusto assumenda repudiandae
+                doloribus
+                minus alias ut voluptas cupiditate accusamus optio velit fuga, nemo magnam, quia officia veritatis
+                voluptates tempore?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem facere saepe quidem aspernatur excepturi
+                officiis vero, veritatis iusto quisquam praesentium. Minus doloremque facilis quasi nesciunt minima est
+                delectus nemo libero!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, voluptatum!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quia. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor illum corrupti numquam incidunt sunt
+                voluptatum at ab, odit, suscipit, repellendus amet cum? Minima, dolore numquam odio laborum animi
+                repellendus est!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum eius perferendis laborum molestias
+                rerum nostrum praesentium! Voluptatibus modi rem explicabo veniam? Dolore est, ex dolores omnis
+                accusantium
+                quidem excepturi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nihil iusto assumenda repudiandae
+                doloribus
+                minus alias ut voluptas cupiditate accusamus optio velit fuga, nemo magnam, quia officia veritatis
+                voluptates tempore?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem facere saepe quidem aspernatur excepturi
+                officiis vero, veritatis iusto quisquam praesentium. Minus doloremque facilis quasi nesciunt minima est
+                delectus nemo libero!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, voluptatum!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quia. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor illum corrupti numquam incidunt sunt
+                voluptatum at ab, odit, suscipit, repellendus amet cum? Minima, dolore numquam odio laborum animi
+                repellendus est!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum eius perferendis laborum molestias
+                rerum nostrum praesentium! Voluptatibus modi rem explicabo veniam? Dolore est, ex dolores omnis
+                accusantium
+                quidem excepturi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nihil iusto assumenda repudiandae
+                doloribus
+                minus alias ut voluptas cupiditate accusamus optio velit fuga, nemo magnam, quia officia veritatis
+                voluptates tempore?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem facere saepe quidem aspernatur excepturi
+                officiis vero, veritatis iusto quisquam praesentium. Minus doloremque facilis quasi nesciunt minima est
+                delectus nemo libero!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, voluptatum!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quia. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor illum
+                corrupti numquam incidunt sunt
+                voluptatum at ab, odit, suscipit, repellendus amet cum? Minima, dolore numquam odio laborum animi
+                repellendus est!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum eius perferendis laborum molestias
+                rerum nostrum praesentium! Voluptatibus modi rem explicabo veniam? Dolore est, ex dolores omnis
+                accusantium
+                quidem excepturi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nihil iusto assumenda repudiandae
+                doloribus
+                minus alias ut voluptas cupiditate accusamus optio velit fuga, nemo magnam, quia officia veritatis
+                voluptates tempore?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem facere saepe quidem aspernatur excepturi
+                officiis vero, veritatis iusto quisquam praesentium. Minus doloremque facilis quasi nesciunt minima est
+                delectus nemo libero!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, voluptatum!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quia. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor illum corrupti numquam incidunt sunt
+                voluptatum at ab, odit, suscipit, repellendus amet cum? Minima, dolore numquam odio laborum animi
+                repellendus est!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum eius perferendis laborum molestias
+                rerum nostrum praesentium! Voluptatibus modi rem explicabo veniam? Dolore est, ex dolores omnis
+                accusantium
+                quidem excepturi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nihil iusto assumenda repudiandae
+                doloribus
+                minus alias ut voluptas cupiditate accusamus optio velit fuga, nemo magnam, quia officia veritatis
+                voluptates tempore?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem facere saepe quidem aspernatur excepturi
+                officiis vero, veritatis iusto quisquam praesentium. Minus doloremque facilis quasi nesciunt minima est
+                delectus nemo libero!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, voluptatum!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quia. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor illum corrupti numquam incidunt sunt
+                voluptatum at ab, odit, suscipit, repellendus amet cum? Minima, dolore numquam odio laborum animi
+                repellendus est!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum eius perferendis laborum molestias
+                rerum nostrum praesentium! Voluptatibus modi rem explicabo veniam? Dolore est, ex dolores omnis
+                accusantium
+                quidem excepturi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nihil iusto assumenda repudiandae
+                doloribus
+                minus alias ut voluptas cupiditate accusamus optio velit fuga, nemo magnam, quia officia veritatis
+                voluptates tempore?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem facere saepe quidem aspernatur excepturi
+                officiis vero, veritatis iusto quisquam praesentium. Minus doloremque facilis quasi nesciunt minima est
+                delectus nemo libero!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, voluptatum!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quia. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor illum corrupti numquam incidunt sunt
+                voluptatum at ab, odit, suscipit, repellendus amet cum? Minima, dolore numquam odio laborum animi
+                repellendus est!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum eius perferendis laborum molestias
+                rerum nostrum praesentium! Voluptatibus modi rem explicabo veniam? Dolore est, ex dolores omnis
+                accusantium
+                quidem excepturi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nihil iusto assumenda repudiandae
+                doloribus
+                minus alias ut voluptas cupiditate accusamus optio velit fuga, nemo magnam, quia officia veritatis
+                voluptates tempore?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem facere saepe quidem aspernatur excepturi
+                officiis vero, veritatis iusto quisquam praesentium. Minus doloremque facilis quasi nesciunt minima est
+                delectus nemo libero!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, voluptatum!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quia. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor illum corrupti numquam incidunt sunt
+                voluptatum at ab, odit, suscipit, repellendus amet cum? Minima, dolore numquam odio laborum animi
+                repellendus est!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum eius perferendis laborum molestias
+                rerum nostrum praesentium! Voluptatibus modi rem explicabo veniam? Dolore est, ex dolores omnis
+                accusantium
+                quidem excepturi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nihil iusto assumenda repudiandae
+                doloribus
+                minus alias ut voluptas cupiditate accusamus optio velit fuga, nemo magnam, quia officia veritatis
+                voluptates tempore?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem facere saepe quidem aspernatur excepturi
+                officiis vero, veritatis iusto quisquam praesentium. Minus doloremque facilis quasi nesciunt minima est
+                delectus nemo libero!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, voluptatum!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quia. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor illum corrupti numquam incidunt sunt
+                voluptatum at ab, odit, suscipit, repellendus amet cum? Minima, dolore numquam odio laborum animi
+                repellendus est!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum eius perferendis laborum molestias
+                rerum nostrum praesentium! Voluptatibus modi rem explicabo veniam? Dolore est, ex dolores omnis
+                accusantium
+                quidem excepturi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nihil iusto assumenda repudiandae
+                doloribus
+                minus alias ut voluptas cupiditate accusamus optio velit fuga, nemo magnam, quia officia veritatis
+                voluptates tempore?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem facere saepe quidem aspernatur excepturi
+                officiis vero, veritatis iusto quisquam praesentium. Minus doloremque facilis quasi nesciunt minima est
+                delectus nemo libero!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, voluptatum!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quia. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor illum
+                corrupti numquam incidunt sunt
+                voluptatum at ab, odit, suscipit, repellendus amet cum? Minima, dolore numquam odio laborum animi
+                repellendus est!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum eius perferendis laborum molestias
+                rerum nostrum praesentium! Voluptatibus modi rem explicabo veniam? Dolore est, ex dolores omnis
+                accusantium
+                quidem excepturi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nihil iusto assumenda repudiandae
+                doloribus
+                minus alias ut voluptas cupiditate accusamus optio velit fuga, nemo magnam, quia officia veritatis
+                voluptates tempore?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem facere saepe quidem aspernatur excepturi
+                officiis vero, veritatis iusto quisquam praesentium. Minus doloremque facilis quasi nesciunt minima est
+                delectus nemo libero!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, voluptatum!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quia. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor illum corrupti numquam incidunt sunt
+                voluptatum at ab, odit, suscipit, repellendus amet cum? Minima, dolore numquam odio laborum animi
+                repellendus est!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum eius perferendis laborum molestias
+                rerum nostrum praesentium! Voluptatibus modi rem explicabo veniam? Dolore est, ex dolores omnis
+                accusantium
+                quidem excepturi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nihil iusto assumenda repudiandae
+                doloribus
+                minus alias ut voluptas cupiditate accusamus optio velit fuga, nemo magnam, quia officia veritatis
+                voluptates tempore?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem facere saepe quidem aspernatur excepturi
+                officiis vero, veritatis iusto quisquam praesentium. Minus doloremque facilis quasi nesciunt minima est
+                delectus nemo libero!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, voluptatum!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quia. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor illum corrupti numquam incidunt sunt
+                voluptatum at ab, odit, suscipit, repellendus amet cum? Minima, dolore numquam odio laborum animi
+                repellendus est!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum eius perferendis laborum molestias
+                rerum nostrum praesentium! Voluptatibus modi rem explicabo veniam? Dolore est, ex dolores omnis
+                accusantium
+                quidem excepturi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nihil iusto assumenda repudiandae
+                doloribus
+                minus alias ut voluptas cupiditate accusamus optio velit fuga, nemo magnam, quia officia veritatis
+                voluptates tempore?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem facere saepe quidem aspernatur excepturi
+                officiis vero, veritatis iusto quisquam praesentium. Minus doloremque facilis quasi nesciunt minima est
+                delectus nemo libero!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, voluptatum!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quia. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor illum corrupti numquam incidunt sunt
+                voluptatum at ab, odit, suscipit, repellendus amet cum? Minima, dolore numquam odio laborum animi
+                repellendus est!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum eius perferendis laborum molestias
+                rerum nostrum praesentium! Voluptatibus modi rem explicabo veniam? Dolore est, ex dolores omnis
+                accusantium
+                quidem excepturi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nihil iusto assumenda repudiandae
+                doloribus
+                minus alias ut voluptas cupiditate accusamus optio velit fuga, nemo magnam, quia officia veritatis
+                voluptates tempore?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem facere saepe quidem aspernatur excepturi
+                officiis vero, veritatis iusto quisquam praesentium. Minus doloremque facilis quasi nesciunt minima est
+                delectus nemo libero!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, voluptatum!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quia. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor illum corrupti numquam incidunt sunt
+                voluptatum at ab, odit, suscipit, repellendus amet cum? Minima, dolore numquam odio laborum animi
+                repellendus est!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum eius perferendis laborum molestias
+                rerum nostrum praesentium! Voluptatibus modi rem explicabo veniam? Dolore est, ex dolores omnis
+                accusantium
+                quidem excepturi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nihil iusto assumenda repudiandae
+                doloribus
+                minus alias ut voluptas cupiditate accusamus optio velit fuga, nemo magnam, quia officia veritatis
+                voluptates tempore?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem facere saepe quidem aspernatur excepturi
+                officiis vero, veritatis iusto quisquam praesentium. Minus doloremque facilis quasi nesciunt minima est
+                delectus nemo libero!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, voluptatum!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quia. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor illum corrupti numquam incidunt sunt
+                voluptatum at ab, odit, suscipit, repellendus amet cum? Minima, dolore numquam odio laborum animi
+                repellendus est!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum eius perferendis laborum molestias
+                rerum nostrum praesentium! Voluptatibus modi rem explicabo veniam? Dolore est, ex dolores omnis
+                accusantium
+                quidem excepturi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nihil iusto assumenda repudiandae
+                doloribus
+                minus alias ut voluptas cupiditate accusamus optio velit fuga, nemo magnam, quia officia veritatis
+                voluptates tempore?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem facere saepe quidem aspernatur excepturi
+                officiis vero, veritatis iusto quisquam praesentium. Minus doloremque facilis quasi nesciunt minima est
+                delectus nemo libero!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, voluptatum!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quia. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor illum
+                corrupti numquam incidunt sunt
+                voluptatum at ab, odit, suscipit, repellendus amet cum? Minima, dolore numquam odio laborum animi
+                repellendus est!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum eius perferendis laborum molestias
+                rerum nostrum praesentium! Voluptatibus modi rem explicabo veniam? Dolore est, ex dolores omnis
+                accusantium
+                quidem excepturi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nihil iusto assumenda repudiandae
+                doloribus
+                minus alias ut voluptas cupiditate accusamus optio velit fuga, nemo magnam, quia officia veritatis
+                voluptates tempore?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem facere saepe quidem aspernatur excepturi
+                officiis vero, veritatis iusto quisquam praesentium. Minus doloremque facilis quasi nesciunt minima est
+                delectus nemo libero!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, voluptatum!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quia. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor illum corrupti numquam incidunt sunt
+                voluptatum at ab, odit, suscipit, repellendus amet cum? Minima, dolore numquam odio laborum animi
+                repellendus est!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum eius perferendis laborum molestias
+                rerum nostrum praesentium! Voluptatibus modi rem explicabo veniam? Dolore est, ex dolores omnis
+                accusantium
+                quidem excepturi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nihil iusto assumenda repudiandae
+                doloribus
+                minus alias ut voluptas cupiditate accusamus optio velit fuga, nemo magnam, quia officia veritatis
+                voluptates tempore?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem facere saepe quidem aspernatur excepturi
+                officiis vero, veritatis iusto quisquam praesentium. Minus doloremque facilis quasi nesciunt minima est
+                delectus nemo libero!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, voluptatum!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quia. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor illum corrupti numquam incidunt sunt
+                voluptatum at ab, odit, suscipit, repellendus amet cum? Minima, dolore numquam odio laborum animi
+                repellendus est!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum eius perferendis laborum molestias
+                rerum nostrum praesentium! Voluptatibus modi rem explicabo veniam? Dolore est, ex dolores omnis
+                accusantium
+                quidem excepturi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nihil iusto assumenda repudiandae
+                doloribus
+                minus alias ut voluptas cupiditate accusamus optio velit fuga, nemo magnam, quia officia veritatis
+                voluptates tempore?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem facere saepe quidem aspernatur excepturi
+                officiis vero, veritatis iusto quisquam praesentium. Minus doloremque facilis quasi nesciunt minima est
+                delectus nemo libero!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, voluptatum!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quia. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit.
+            </p>
+        </div>
+    </div>
+
+
+
+    <div class="content">
+        <div class="inner-content">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor illum corrupti numquam incidunt sunt
+            voluptatum at ab, odit, suscipit, repellendus amet cum? Minima, dolore numquam odio laborum animi
+            repellendus est!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum eius perferendis laborum molestias
+            rerum nostrum praesentium! Voluptatibus modi rem explicabo veniam? Dolore est, ex dolores omnis accusantium
+            quidem excepturi?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nihil iusto assumenda repudiandae doloribus
+            minus alias ut voluptas cupiditate accusamus optio velit fuga, nemo magnam, quia officia veritatis
+            voluptates tempore?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem facere saepe quidem aspernatur excepturi
+            officiis vero, veritatis iusto quisquam praesentium. Minus doloremque facilis quasi nesciunt minima est
+            delectus nemo libero!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, voluptatum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quia. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor illum corrupti numquam incidunt sunt
+            voluptatum at ab, odit, suscipit, repellendus amet cum? Minima, dolore numquam odio laborum animi
+            repellendus est!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum eius perferendis laborum molestias
+            rerum nostrum praesentium! Voluptatibus modi rem explicabo veniam? Dolore est, ex dolores omnis accusantium
+            quidem excepturi?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nihil iusto assumenda repudiandae doloribus
+            minus alias ut voluptas cupiditate accusamus optio velit fuga, nemo magnam, quia officia veritatis
+            voluptates tempore?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem facere saepe quidem aspernatur excepturi
+            officiis vero, veritatis iusto quisquam praesentium. Minus doloremque facilis quasi nesciunt minima est
+            delectus nemo libero!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, voluptatum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quia. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor illum corrupti numquam incidunt sunt
+            voluptatum at ab, odit, suscipit, repellendus amet cum? Minima, dolore numquam odio laborum animi
+            repellendus est!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum eius perferendis laborum molestias
+            rerum nostrum praesentium! Voluptatibus modi rem explicabo veniam? Dolore est, ex dolores omnis accusantium
+            quidem excepturi?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nihil iusto assumenda repudiandae doloribus
+            minus alias ut voluptas cupiditate accusamus optio velit fuga, nemo magnam, quia officia veritatis
+            voluptates tempore?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem facere saepe quidem aspernatur excepturi
+            officiis vero, veritatis iusto quisquam praesentium. Minus doloremque facilis quasi nesciunt minima est
+            delectus nemo libero!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, voluptatum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quia. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit.
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        /*css theo thuoc tinh*/
+        /* a[target] {
+            background-color: yellow;
+        } */
+
+         /*css theo gia tri thuoc tinh*/
+        /* a[target = "_blank"] {
+            background-color: yellow;
+        } */
+
+        /*css theo 1 phan thuoc tinh chi dc ghi 1 phan tu*/
+        /* a[title ~= "Website"] {
+            background-color: yellow;
+        } */
+
+        /*css theo 1 phan thuoc tinh*/
+        /* a[title ^= "Website"] {
+            background-color: yellow;
+        } */
+        /*gia tri phan nguyen ven va don ler hoac dau gach ngang*/
+        /* p[class|="top"] {
+            background-color: yellow;
+        } */
+
+        /*chon top o dau*/
+        /* p[class^="top"] {
+            background-color: yellow;
+        } */
+
+        /*chon test o cuoi*/
+         /* p[class$="test"] {
+            background-color: yellow;
+        }  */
+
+        /*chon hearder co trong class*/
+        p[class*="hearder"] {
+            background-color: yellow;
+        }
+    </style>
+    
+    <!-- <a href="https://www.google.com" title="Website Google">Google</a>
+    <a href="https://www.facebook.com" title="Website Facebook" target="_blank">facebook</a>
+    <a href="https://www.youtube.com" title="Website youtube" target="">youtube</a> -->
+
+    <p class="top-hearder test">Noi DUng 1</p>
+    <p class="top-hearder test">Noi DUng 2</p>
+    <p class="tophearder">Noi DUng 3</p>
+    <p class="top">Noi DUng 4</p>
+    <p class="top test">Noi DUng 5</p>
+</body>
+</html>

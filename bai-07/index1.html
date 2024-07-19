@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .container{ 
+            background: blueviolet;
+            padding: 20px;
+            border-radius: 10px;
+            height: 300px;
+            
+        }
+
+        .item{
+            background-color: orange;
+            border: 3px solid black;
+            padding: 10px;
+            margin: 10px;
+            font-size: 28px;
+            color: black;
+            border-radius: 10px;
+            text-align: center;
+            width: 150px;
+        }
+
+        /*
+        - flex-direction
+            row: chiều ngang
+            row-reverse: đảo ngược theo chiều ngang
+            column: chiều dọc
+            column-reverse: đảo ngược theo chiều dọc
+        - flex-wrap :  cho phép xuống dòng hay k khi container thay đổi
+            nowrap: khong cho phep xuống dòng
+            wrap : cho phep xuống dòng
+            wrap-reverse : cho phep xuống dòng nguoc
+        - justify-content : đều chỉnh vị trí bắt đầu và đều chỉnh trục main axis
+            flex-start : mắc định - căn từ trái sang phải
+            flex-end : căn phải sang trái
+            center : căn giữa
+            space-between : căn đều , item đầu và cuối sát với lề
+            space-around : căn đều , khoảng cách item với lề = 1/2 khoảng cách giữa 2 item với nhau
+            space-evenly : căm đều , khoảng cách 2 item với nhau bằng k/c item với lề
+        - align-items : đều chỉnh vị trí bắt đầu và đều chỉnh trình cross axis , căn chỉnh CHO 1 DÒNG
+            flex-start : item nằm bên trên
+            flex-end : item năm bên dưới
+            center : căn giữa theo trục dọc
+            stretch : mặc định , các phần tử tự động tăng chiều cao để lăp đầu container (ưu tiên chiều cao item hơn là box cha)
+        - align-content : đều chỉnh vị trí bắt đầu và đều chỉnh trình cross axis CHO NHIỀU DÒNG
+            flex-start : item nằm bên trên
+            flex-end : item năm bên dưới
+            center : làm giữa giữa
+            stretch : mặc định , các phần tử tự động tại chiều cao này lăp đầu container (động tại chiều cao item hơn là box cha)
+            space-between : căn đều , item đầu và cuối sát với lề (theo chieu doc)
+            space-around : căn đều , khoảng cách item với lề = 1/2 khoảng cách giữa 2 item với nhau (theo chieu doc)
+            space-evenly : cán đều , khoảng cách 2 item với nhau bằng k/c item với lê (theo chieu doc)
+        - align-self : áps dụng cho 1 item nào đó thôi
+            flex-start : item nằm bên trên
+            flex-end : item năm bên dưới
+            center : làm giữa giữa
+            stretch : mặc định , các phần tử tự động tại chiều cao này làm giữa giữa (động tại chiều cao item hơn là box cha)
+        - order : thuộc tính dùng để săp xếp lại các item
+            */
+
+        .container{
+            display: flex;
+            /*display: inline-flex; chiều rộng băng tổng chiều dài cuar các phần tử con*/
+            /* flex-direction: column; */ 
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: flex-end;
+            /* align-content: space-around; */
+        }
+
+        /* .item:nth-child(2){
+            align-self: flex-start; 
+        } */
+
+        .item:nth-child(1){
+           order: 1;
+        }
+
+        .item:nth-child(2){
+            order: 0;
+        }
+
+        .item:nth-child(3){
+            order: 0;
+        }
+
+    </style>
+
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <!-- <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div> -->
+    </div>
+
+</body>
+</html>

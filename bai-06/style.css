@@ -1,0 +1,20 @@
+:root {
+    --color-one : red;
+    --color-two : yellow;
+}
+
+h2{
+    color: var(--color-one);
+}
+
+h3{
+    --local-color : rgb(76, 253, 76);
+    color: var(--local-color);
+}
+/*Do su dung bien local nen h4 k the su dung dc*/
+h4{
+    color: var(--local-color);
+}
+p{
+    color: var(--color-one);
+}

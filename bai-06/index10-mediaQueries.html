@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+        h1{
+            color: #000;
+            font-size: 80px;
+        }
+        /*Ipad ngang (1024 * 768)*/
+        @media screen and (max-width: 1024px){
+            h1{
+                color: red;
+                font-size: 50px;
+            }
+        }
+        /*Ipad dọc (768 * 1024)*/
+        @media screen and (max-height: 768px){
+            h1{
+                color: blue;
+                font-size: 40px;
+            }
+        }
+        /*Smartphone (480 * 640)*/
+        @media screen and (max-width: 480px){
+            h1{
+                color: green;
+                font-size: 30px;
+            }
+        }
+        /**/
+        @media screen and (max-width: 320px){
+            h1{
+                color: rgb(172, 158, 31);
+                font-size: 20px;
+            }
+        }
+    </style>
+
+    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, cupiditate. Totam quia odit ipsam iste itaque excepturi, porro harum? Exercitationem non tempore, alias tempora esse nam provident eos fuga accusantium!</h1>
+</body>
+</html>
